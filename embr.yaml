@@ -1,9 +1,5 @@
 platform: python
 platformVersion: "3.12"
 
-run:
-  port: 8080
-  startCommand: "/output/pythonenv3.12/bin/gunicorn hello.wsgi --bind 0.0.0.0:8080"
-
 healthCheck:
   path: /health
