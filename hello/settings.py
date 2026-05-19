@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-insecure-key-change-me')
 DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['production-django-hello-embr-9570a469.app.embr.azure', 'localhost']
 CSRF_TRUSTED_ORIGINS = ['https://*', 'http://*']
 
 INSTALLED_APPS = [
